@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda</title>
+
+    <style>
+        .heading {
+            text-align: center;
+            border: 2px solid black;
+            background-color: lightgray;
+        }
+
+        /*GRID do conteudo do ponto de venda*/
+        .grid-container { 
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        .grid-container > div {   /*Todos os elementos div dentro do ...*/
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        .lista-produtos {
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+
+        .descricao-produto {
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        .inserir-item {
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        .finalizar-compra {
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        /*Fim do GRID do conteudo do ponto de venda*/
+
+        .lista-de-produtos {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Cabecalho. Irá ser modificado após o login para que possamos apresentar o nome e dados no cabeçalho-->
+    <div class="heading">
+        <p>Sistema de Ponto de Venda</p>
+        <p class="endereco">Mercado e Endereco</p>
+    </div>
+    
+    <!--GRID para o layout da pagina-->
+    
+    <div class="grid-container">
+        <!--Aqui deverá ser criada uma tabela que recebe os itens adcionados com seus valores, qtd de itens e valor total-->
+        <div class="lista-produtos">
+            <select name="lista-de-produtos" id="lista-de-produtos">
+
+            </select>
+        </div>
+        
+        <!--Será apresentado o item que for adcionado por ultimo, junto a sua descrição-->
+        <div class="descricao-produto">Descricao dos itens</div>
+
+        <!--
+            Serão apresentados:
+                - inserir numero do item (tabelados de 1 a 10)
+                - quantidade
+                - botão para inserir o item
+                - botão para retirar um item (mostra o numero do item na tabela de itens, retira de acordo com o indice e a quantidade)
+                - botão para mostrar o catálogo
+        -->
+        <div class="inserir-item">Inserir item</div>
+
+        <!--
+            O javaScript deve iniciar desabilitando os campos:
+                - listaProdutos
+                - descricaoProduto
+                - inserirItem
+            De inicio o finalizarCompra irá ter a opção de:
+                - iniciar nova compra:
+                    Habilitará os campos descricaoProduto e inserirItem.
+                    Mudará os botões para:
+                        - finalizar compra -> (tipo de pagamento)
+                        - cancelar compra
+                - sair do sistema
+                    Voltará para a tela de login
+        -->
+        <div class="finalizar-compra">Finalizar</div>
+    </div>
+    
+</body>
+
+</html>
