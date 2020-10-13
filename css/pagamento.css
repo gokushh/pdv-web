@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.heading {
+    text-align: center;
+    border: 2px solid black;
+    background-color: lightgray;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #ffffff;
+    margin: 0 10px;
+}
+
+.payment{
+    background: bisque;
+    max-width: 360px;
+    margin: 80px auto; /*Centraliza o card na tela*/
+    height: auto;
+    padding: 35px;
+    padding-top: 70px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.payment h3{
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    color: #0d3c64;
+}
+
+.form .label{
+    display: block;
+    color: #555555;
+    margin-bottom: 6px;
+}
+
+.form .input{
+    padding: 13px 0 13px 25px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid #dddddd;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    word-wrap: 3px;
+    outline: none;
+    font-size: 16px;
+    color: #555555;
+}
+
+.card-grp{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-item{
+    width: 80%;
+}
+
+.space{
+    margin-bottom: 20px;
+}
+
+.icon-relative{
+    position: relative;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login PDV</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .formLogin {
+            text-align: center;
+            background-color: lightgray;
+            margin: auto;
+            width: 300px;
+            height: 130px;
+            padding: 1em;
+            border-radius: 2%;
+        }
+
+        .submitLogin {
+            width: 12em;
+        }
+
+        fieldset {
+            border: none;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Sistema Ponto de Venda</h1>
+
+    <fieldset>
+        <div class="formLogin">
+            <label>User</label><br>
+            <input type="text" id="userLogin" class="userLogin"><br>
+            <label>Password</label><br>
+            <input type="password" id="userPassword" class="userPassword"><br><br>
+            <input type="submit" value="login" class="submitLogin"><br><br><br>
+            <a href="indexgrid.html">Clique aqui se estiver com preguiça</a>
+        </div>
+        
+    </fieldset>
+
+    <script>
+        const userLogin = document.querySelector('.userLogin');
+        const userPassword = document.querySelector('.userPassword');
+        const submitLogin = document.querySelector('.submitLogin');
+
+        function logIn() {
+
+            if (userLogin.value === 'CampoBelo'){
+            
+                if(userPassword.value === '1234'){
+                    //rediceriona a pagina para o link
+                    window.location.href = 'indexgrid.html';
+                }else{
+                    window.alert('Senha incorreta.');
+                }
+                
+            }else{
+                window.alert('Usuário incorreto.');
+            }
+
+            userLogin.value = '';
+            userPassword.value = '';
+
+            userLogin.focus();
+
+            
+        }
+
+        submitLogin.addEventListener('click', logIn);
+
+    </script>
+
+</body>
+
+</html>
