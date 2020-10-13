@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/*Forma de pagamento*/
+
+.form_pagamento{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
 .heading {
     text-align: center;
     border: 2px solid black;
@@ -12,11 +22,11 @@
 
 body{
     background: #ffffff;
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 .payment{
-    background: bisque;
+    background: lightgray;
     max-width: 360px;
     margin: 80px auto; /*Centraliza o card na tela*/
     height: auto;
