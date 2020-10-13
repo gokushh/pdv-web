@@ -5,53 +5,17 @@
     background-color: lightgray;
 }
 
-.grid-template{
-    display: grid;
-    grid-template-columns: 150px 150px 150px 150px ;
-    margin-right: 100px;
-    /*background: rgba(0, 0, 0, 0.6);*/
-}
-
-img{
-    max-width: 100%;
-    width: 120px;
-    height: 120px;
-    object-fit: contain;
-    margin-right: 100px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-}
-
-.legenda{
-    margin-right: 100px;
-    margin-left: 45px;
-    margin-top: 0%;
-}
-
-.button{
-    
-    margin-left: 45px;
-}
-
-.qtd{
-    width: 50px;
-    margin-right: 80px;
-    margin-left: 45px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
- .grid-container {
+/*GRID do conteudo do ponto de venda*/
+.grid-container { 
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 10px;
-    /*background-color: lightgray;*/
+    background-color: lightgray;
     padding: 10px;
 }
 
-.grid-container>div {
-     /*Todos os elementos div dentro do ...*/
-    /*background-color: rgba(255, 255, 255, 0.8);*/
+.grid-container > div {   /*Todos os elementos div dentro do ...*/
+    background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
@@ -63,32 +27,46 @@ img{
 }
 
 .descricao-produto {
-    width: 100px;
-     grid-column-start: 2;
-     grid-column-end: 4;
- }
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
 
 .inserir-item {
     grid-column-start: 2;
     grid-column-end: 4;
 }
 
-.inserir-item>.btn {
-     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    padding: 10px;
-    margin-top: 10px;
-    background-image: linear-gradient;
-}
-
 .finalizar-compra {
     grid-column-start: 2;
     grid-column-end: 4;
 }
-
 /*Fim do GRID do conteudo do ponto de venda*/
 
 .lista-de-produtos {
     width: 500px;
     height: 500px;
+}
+
+/*Login*/
+
+h1 {
+    text-align: center;
+}
+
+.formLogin {
+    text-align: center;
+    background-color: lightgray;
+    margin: auto;
+    width: 300px;
+    height: 130px;
+    padding: 1em;
+    border-radius: 2%;
+}
+
+.submitLogin {
+    width: 12em;
+}
+
+fieldset {
+    border: none;
 }
