@@ -7,7 +7,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Sistema de Ponto de Venda</title>
+    <title>Venda</title>
+
+  
 </head>
 
 <body>
@@ -16,13 +18,12 @@
         <p>Sistema de Ponto de Venda</p>
         <p class="endereco">Mercado e Endereco</p>
     </div>
-
+    
     <!--GRID para o layout da pagina-->
-
     <div class="grid-container">
+        
         <!--Aqui deverá ser criada uma tabela que recebe os itens adcionados com seus valores, qtd de itens e valor total-->
         <div class="lista-produtos">
-
 
             <select name="lista-de-produtos" id="lista-de-produtos" size="35">
                 <!--  https://www.youtube.com/watch?v=mfHAQ-4Rspw&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=27 
@@ -30,11 +31,10 @@
                 -->
             </select>
 
-
         </div>
-
+        
         <!--Será apresentado o item que for adcionado por ultimo, junto a sua descrição-->
-        <div class="descricao-produto">Produtos</div>
+        <div class="descricao-produto">Descricao dos itens</div>
 
         <!--
             Serão apresentados:
@@ -44,65 +44,7 @@
                 - botão para retirar um item (mostra o numero do item na tabela de itens, retira de acordo com o indice e a quantidade)
                 - botão para mostrar o catálogo
         -->
-        <section class="grid-template">
-            <div class="img">
-                <img src="/imgs/cocacola.jpg">
-                <h5 class="legenda">Coca Cola Lata</h5>
-                <button class="button" type="submit">Adicionar</button>
-                <input class="qtd" type="number" value="1" min="1" step="1" class="item_Quantity">
-                <button class="button" type="submit">Remover</button>
-            </div>
-            <div class="img">
-                <img src="/imgs/chocolatetalento.jpg">
-                <h5 class="legenda">Chocolate Talento</h5>
-                <button class="button" type="submit">Adicionar</button>
-                <input class="qtd" type="number" value="1" min="1" step="1" class="item_Quantity">
-                <button class="button" type="submit">Remover</button>
-            </div>
-            <div class="img">
-                <img src="/imgs/cafeprimaqualita.jpg">
-                <h5 class="legenda">Café Prima Qualita</h5>
-                <button class="button" type="submit">Adicionar</button>
-                <input class="qtd" type="number" value="1" min="1" step="1" class="item_Quantity">
-                <button class="button" type="submit">Remover</button>
-            </div>
-            <div class="img">
-                <img src="/imgs/leitecondensado.jpg">
-                <h5 class="legenda">Leite Condensado</h5>
-                <button class="button" type="submit">Adicionar</button>
-                <input class="qtd" type="number" value="1" min="1" step="1" class="item_Quantity">
-                <button class="button" type="submit">Remover</button>
-            </div>
-            <div class="img">
-                <img src="/imgs/biscoitocreamcracker.jpg">
-                <h5 class="legenda">Biscoito CreamCracker</h5>
-                <button class="button" type="submit">Adicionar</button>
-                <input class="qtd" type="number" value="1" min="1" step="1" class="item_Quantity">
-                <button class="button" type="submit">Remover</button>
-            </div>
-            <div class="img">
-                <img src="/imgs/cervejacoronaextra.jpg">
-                <h5 class="legenda">Cerveja Corona</h5>
-                <button class="button" type="submit">Adicionar</button>
-                <input class="qtd" type="number" value="1" min="1" step="1" class="item_Quantity">
-                <button class="button" type="submit">Remover</button>
-            </div>
-            <div class="img">
-                <img src="/imgs/danete.jpg">
-                <h5 class="legenda">Danette</h5>
-                <button class="button" type="submit">Adicionar</button>
-                <input class="qtd" type="number" value="1" min="1" step="1" class="item_Quantity">
-                <button class="button" type="submit">Remover</button>
-            </div>
-            <div class="img">
-                <img src="/imgs/aguacaxambu.jpg">
-                <h5 class="legenda">Água Mineral Caxambu</h5>
-                <button class="button" type="submit">Adicionar</button>
-                <input class="qtd" type="number" value="1" min="1" step="1" class="item_Quantity">
-                <button class="button" type="submit">Remover</button>
-            </div>
-            </section>
-
+        <div class="inserir-item">Inserir item</div>
 
         <!--
             O javaScript deve iniciar desabilitando os campos:
@@ -118,18 +60,13 @@
                 - sair do sistema
                     Voltará para a tela de login
         -->
-        <div class="finalizar-compra">Finalizar
-            <br>
-            <br>
-            <div class="inserir-item btn">
-                <button class="btn" type="submit">Cancelar</button>
-                <button class="btn" type="submit">Finalizar</button>
-            </div>
-        </div>
+        <div class="finalizar-compra">Finalizar</div>
+    </div>
+    
 
-        <script>
+    <script>
         //https://www.youtube.com/watch?v=mfHAQ-4Rspw&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=27
-        </script>
+    </script>
 </body>
 
 </html>
